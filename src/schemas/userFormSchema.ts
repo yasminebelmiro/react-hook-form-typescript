@@ -19,16 +19,16 @@ export const formSchema = z
       .min(1, "Campo obrigatótio.")
       .email("Use um email válido."),
     password: z.string().min(6, "A senha precisa ter no mínimo 6 caracteres"),
-    confimrPassword: z
+    confirmPassword: z
       .string()
       .min(6, "A confirmação precisa ter no mínimo 6 caracteres"),
     agree: z.boolean().refine((filed) => filed === true, {
       message: "você precisa concordar com os termos.",
     }),
   })
-  .refine((filed) => filed.password === filed.confimrPassword, {
+  .refine((filed) => filed.password === filed.confirmPassword, {
     message: "As senha devem ser identicas",
-    path: ["confirmpassword"]
+    path: ["confirmPassword"]
   });
 
   //tipando formulário
