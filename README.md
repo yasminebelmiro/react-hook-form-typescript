@@ -1,54 +1,54 @@
-# React + TypeScript + Vite
+# ☕ Formulário de validação com Typescripy + Zod
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Este projeto é um formulário de cadastro feito com React, utilizando **React Hook Form** para gerenciamento de formulário e **Zod** para validação de dados. Projeto do curso do Matheus Battisti na Udemy.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React
+- Vite
+- Tailwind CSS
+- TypeScript
+- React Hook Form
+- Zod
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+
+## 📦 Instalação
+
+Clone o projeto e instale as dependências:
+
+```bash
+git clone https://github.com/yasminebelmiro/react-hook-form-typescript.git
+cd react-hook-form-typescript
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Execute o projeto em modo de desenvolvimento:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm run dev
 ```
+## 🛠️ Estrutura do Projeto
+```bash
+src/
+│
+├── assets/         # Imagens e arquivos estáticos
+├── components/     # Componentes reutilizáveis
+├── hooks/          # Hooks personalizados
+├── schemas/        # Schemas de validação
+├── App.jsx         # Componente principal
+├── index.jsx        # Ponto de entrada
+└── index.css       # Estilos globais com Tailwind
+```
+
+## 🧠 Aprendizados
+* Validação de formulários com Typescript e Zod
+
+## 📄 Licença
+Projeto com fins educacionais.
+
+Licença: [MIT](./LICENSE)
+
+##
+Feito com 💖 por [Yasmine](https://github.com/yasminebelmiro)
